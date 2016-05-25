@@ -1,5 +1,55 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
 
-<%= image_tag("racebike.jpg", class: "img-responsive") %> <!--samplecodeforimages-->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="comments-section col-xs-3 col-sm-3">
+
+    <h1>Discussion</h1>
+      <% @comments.each do |comment| %>
+        <p>name</p>
+        <%= comment.name %><br>
+        <%= comment.body %><br>
+      <% end %><!-- end comments -->
+      
+      <%= form_for(@comment) do |f| %>
+        <% if @comment.errors.any? %>
+         <div id="error_explanation">
+           <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+           <ul>
+             <% @comment.errors.full_messages.each do |message| %>
+             <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+         <% end %>
+
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :body %><br>
+        <%= f.text_area :body %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %> <!--end form for new comments -->
+
+    </div><!--/comments-section-->
+  </row>
+
+  <row>
+    <div class="posts-section col-xs-9 col-sm-9">
+       <% @posts.each do |post| %>
+         <%= post.title %>
+         <%= post.body %>
+         <%= image_tag(post.image_url, class: "img-responsive") %>
+         <%= link_to 'Show', post %>
+    <% end %>
+  </div><!--/posts-section-->
+ </div><!-- /row -->
+</div><!-- /container-fluid -->
 
