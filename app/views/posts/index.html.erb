@@ -1,24 +1,14 @@
 <p id="notice"><%= notice %></p>
+<div class="article-index">
 
-<h1>Listing Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
     <% @posts.each do |post| %>
       <%= render post %>
     <% end %>
-  </tbody>
-</table>
 
-<br>
+
 
 <%= link_to 'New Post', new_post_path %>
+<%= link_to 'Back', root_path %>
+</div><!--/article-index-->
