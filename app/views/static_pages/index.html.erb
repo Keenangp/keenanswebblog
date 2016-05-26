@@ -35,7 +35,7 @@
     <% end %> <!--end form for new comments -->
 
     <% @comments.each do |comment| %>
-       <p><span id="comment-name"><%= comment.name %></span></p>
+       <div class="testerino"><span id="comment-name"><%= comment.name %></span></div>
        <p id="comment-body"><%= comment.body %></p>
       <% end %><!-- end comments -->
 

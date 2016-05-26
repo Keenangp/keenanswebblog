@@ -8,10 +8,6 @@
 	margin-top: 100px;
 	}
 
-	#thoughts-header {
-	border-bottom: 1px solid #CC0A0A;
-	padding-right: 120px;
-	}
 }
 
 
@@ -35,4 +31,20 @@
 
 #post-title-section {
 	border-top: 15px solid black;
+}
+
+.testerino {
+	white-space: nowrap;
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 740px) {
+	.comments-section {
+	display: none;
+	}
+	.posts-section {
+	width: 100%;
+	}
 }
