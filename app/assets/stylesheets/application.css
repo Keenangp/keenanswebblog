@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.body-header {
+	height: 100px;
+	margin-top: -20px;
+	background-color: black;
+	color: white;
+}
+
+.body-header h1 {
+	float: right;
+	padding-top: 40px;
+}
+
+#header-glyph {
+	color: #CC0A0A;
+}
