@@ -4,8 +4,9 @@
 
 	.comments-section {
 	position: fixed;
-	height: 575px;
+	height: 85%;
 	margin-top: 100px;
+	overflow-y: scroll;
 	}
 
 }
