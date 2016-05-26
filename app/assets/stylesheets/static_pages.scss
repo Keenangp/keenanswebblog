@@ -5,9 +5,11 @@
 
 	.comments-section {
 	position: fixed;
-	height: 700px;
+	height: 575px;
 	width: 300px;
-	overflow-y: scroll;	
+	overflow-y: scroll;
+	margin-top: 100px;
+	border-bottom: 1px solid black;	
 	}
 
 	#thoughts-header {
@@ -19,4 +21,19 @@
 
 .posts-section {
 	float: right;
+	margin-top: 100px;
 }
+
+.actions {
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+#comment-name {
+	background-color: #CC0A0A;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 5px;
+	color: white;
+}
+

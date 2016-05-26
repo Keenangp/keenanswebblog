@@ -19,6 +19,9 @@
 	margin-top: -20px;
 	background-color: black;
 	color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .body-header h1 {
